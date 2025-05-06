@@ -1,0 +1,32 @@
+name: tilediff
+channels:
+  - conda-forge
+  - pytorch
+  - apple
+dependencies:
+  # Core
+  - python=3.11
+  - pip
+  - pytorch::pytorch       # will pull the Metal (MPS) build on macOS
+  - torchvision
+  - torchaudio
+  - accelerate>=0.28.0    # multi‑machine helper
+  # Diffusion & VLMs
+  - diffusers>=0.27.0
+  - transformers
+  - sentencepiece
+  - safetensors
+  # Utils
+  - pillow
+  - numpy
+  - einops
+  - matplotlib
+  - tqdm
+  # Scraping (optional)
+  - pyppeteer             # headless browser for Watabou
+  # Dev / CLI
+  - jupyterlab
+  - ipywidgets
+  - git
+  - pip:
+      - git+https://github.com/openai/CLIP.git
