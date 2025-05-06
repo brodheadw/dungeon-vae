@@ -1,2 +1,5 @@
-./output
-./data
+output/
+data/
+lora-perilous-shore/
+__pycache__
+.DS_Store
